@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slide-Out Navigation</title>
+</head>
+<body class="corpo">
+    <form class="login">
+        <div>
+        <h1 class="texto">Faça seu Login!</h1>
+        </div>
+        <div>
+          <input type="email" placeholder="exemplo123@gmail"c id="login">
+        </div>
+        <div>
+       <input type="password" placeholder="Senha" id="senha">
+       </div>
+       <div>
+       <button type="button" class="butto" onclick="logar()">Entrar</button>
+       </div>
+       <button type="button" class="butto" onclick="registro()">Registrar</button>
+    </form>
+    <!--codigo do menu hamburguer abaixo-->
+    <div class="navigation">
+        <button class="hamburger" onclick="show()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </button>
+
+        <nav>
+            <ul>
+                <li><a href="#">9º Ano </a></li>
+                <li><a href="#">8º Ano</a></li>
+                <li><a href="#">7º Ano</a></li>
+                <li><a href="#">6º Ano</a></li>
+               
+            </ul>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

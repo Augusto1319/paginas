@@ -1,0 +1,125 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login{
+    background-color: rgb(49, 49, 49);
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 30px;
+}
+input, .butto{
+    padding: 10px;
+    width: 200px;
+    margin: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+.butto{
+    color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: rgb(238, 234, 234);
+    background: rgb(62, 62, 126);
+    margin-left: 22px;
+}
+.butto:active
+{
+opacity: 0.8;
+}
+.texto{
+    color: white;
+    margin-left: 21px;
+}
+
+/*
+aqui começa o hamburguer menu
+*/
+a,button{
+
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+nav{
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 250px;
+}
+
+.navigation{
+    position: fixed;
+    right: -500px;
+    width: 350px;
+    height: 100%;
+    background-color: rgb(49, 49, 49);
+    transition: .5s;
+}
+
+.navigation ul li{
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 1.5em;
+    padding: 20px 30px;
+    border-bottom: 1pt solid #7c7c7c;
+}
+
+.hamburger, .bar{
+    position: fixed;
+}
+
+.hamburger{
+    display: block;
+    top: 5%;
+    left: 95%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    border: 0;
+    background: 0 0;
+}
+
+.bar{
+    top: 3px;
+    background: rgb(49, 49, 49);
+    width: 100%;
+    height: 4px;
+    transition: all .3s ease-in;
+}
+
+#bar2{
+    top: 11px;
+}
+
+#bar3{
+    top: 19px;
+}
+
+.navigation.active{
+    right: 0;
+}
+
+.hamburger.open #bar1{
+    background-color: #ffffff;
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2{
+    background-color: transparent;
+}
+
+.hamburger.open #bar3{
+    background-color: #ffffff;
+    transform: rotate(-45deg) translate(6px, -5px);
+}
