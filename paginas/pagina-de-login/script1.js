@@ -7,9 +7,9 @@ function logar(){
     var senha = document.getElementById('senha').value;
     if(login == "augusto123@gmail.com" && senha == "12345"){
         alert ('Sucesso no Registro');
-       window.location.href="http://127.0.0.1:5500/menu-anos/pagina-inicial/index2.html"
+       window.location.href="http://127.0.0.1:5500/paginas/pagina-inicial/index3.html"
     }
 }
 function logi(){
-   window.location.href = "http://127.0.0.1:5500/menu-anos/pagina-de-login/index.html"
+   window.location.href = "http://127.0.0.1:5500/paginas/pagina-de-login/index.html"
 }
